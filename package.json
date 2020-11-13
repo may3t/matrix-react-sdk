@@ -1,5 +1,5 @@
 {
-  "name": "tambulihuddle-web-react-sdk",
+  "name": "matrix-react-sdk",
   "version": "3.0.0",
   "description": "SDK for matrix.org using React",
   "author": "matrix.org",
@@ -79,7 +79,7 @@
     "is-ip": "^2.0.0",
     "linkifyjs": "^2.1.9",
     "lodash": "^4.17.19",
-    "matrix-js-sdk": "git+https://4d82e837d655044272324e62f1ec2ac3b334f7b8:x-oauth-basic@github.com/may3t/matrix-js-sdk.git#pccl",
+    "matrix-js-sdk": "github:may3t/matrix-js-sdk#pccl",
     "minimist": "^1.2.5",
     "pako": "^1.0.11",
     "parse5": "^5.1.1",
