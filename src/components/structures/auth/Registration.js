@@ -635,9 +635,9 @@ export default createReactClass({
             );
         }
 
-        const signIn = <a className="mx_AuthBody_changeFlow" onClick={this.onLoginClick} href="#">
+        /*const signIn = <a className="mx_AuthBody_changeFlow" onClick={this.onLoginClick} href="#">
             { _t('Sign in instead') }
-        </a>;
+        </a>;*/
 
         // Only show the 'go back' button if you're not looking at the form
         let goBack;
