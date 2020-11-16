@@ -132,7 +132,7 @@ export default createReactClass({
 
         this._replaceClient(newProps.serverConfig);
 
-        // Handle cases where the user enters "https://tambuli.app" for their server
+        // Handle cases where the user enters "https://tambulilabs.com" for their server
         // from the advanced option - we should default to FREE at that point.
         const serverType = ServerType.getTypeFromServerConfig(newProps.serverConfig);
         if (serverType !== this.state.serverType) {

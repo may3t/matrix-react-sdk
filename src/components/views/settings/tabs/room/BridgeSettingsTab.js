@@ -25,7 +25,7 @@ const BRIDGE_EVENT_TYPES = [
     // m.bridge
 ];
 
-const BRIDGES_LINK = "https://tambuli.app/bridges/";
+const BRIDGES_LINK = "https://tambulilabs.com/bridges/";
 
 export default class BridgeSettingsTab extends React.Component {
     static propTypes = {

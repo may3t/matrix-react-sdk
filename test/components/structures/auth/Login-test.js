@@ -40,7 +40,7 @@ describe('Login', function() {
 
     function render() {
         return ReactDOM.render(<Login
-            serverConfig={mkServerConfig("https://tambuli.app", "https://vector.im")}
+            serverConfig={mkServerConfig("https://tambulilabs.com", "https://vector.im")}
             onLoggedIn={() => {}}
             onRegisterClick={() => {}}
             onServerConfigChange={() => {}}

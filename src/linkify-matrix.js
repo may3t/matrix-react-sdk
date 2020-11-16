@@ -184,7 +184,7 @@ const escapeRegExp = function(string) {
 };
 
 // Recognise URLs from both our local vector and official vector as vector.
-// anyone else really should be using tambuli.app.
+// anyone else really should be using tambulilabs.com.
 matrixLinkify.VECTOR_URL_PATTERN = "^(?:https?://)?(?:"
     + escapeRegExp(window.location.host + window.location.pathname) + "|"
     + "(?:www\\.)?(?:riot|vector)\\.im/(?:app|beta|staging|develop)/"

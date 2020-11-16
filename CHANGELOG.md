@@ -1637,7 +1637,7 @@ Changes in [2.3.0-rc.1](https://github.com/matrix-org/matrix-react-sdk/releases/
    [\#4261](https://github.com/matrix-org/matrix-react-sdk/pull/4261)
  * Improve naming of Jitsi conferences
    [\#4251](https://github.com/matrix-org/matrix-react-sdk/pull/4251)
- * Handle tambuli.app user permalink in-room rather than solo
+ * Handle tambulilabs.com user permalink in-room rather than solo
    [\#4245](https://github.com/matrix-org/matrix-react-sdk/pull/4245)
  * Fix: filter room list (again) by canonical and alternative aliases
    [\#4260](https://github.com/matrix-org/matrix-react-sdk/pull/4260)
@@ -5784,7 +5784,7 @@ Changes in [0.14.5-rc.1](https://github.com/matrix-org/matrix-react-sdk/releases
    [\#1936](https://github.com/matrix-org/matrix-react-sdk/pull/1936)
  * only run e2e tests on PRs targeted on develop
    [\#2261](https://github.com/matrix-org/matrix-react-sdk/pull/2261)
- * Fix and test tambuli.app alias permalinks
+ * Fix and test tambulilabs.com alias permalinks
    [\#2254](https://github.com/matrix-org/matrix-react-sdk/pull/2254)
  * click-through svg on tag tile context menu to make it less weird
    [\#2257](https://github.com/matrix-org/matrix-react-sdk/pull/2257)
@@ -5792,7 +5792,7 @@ Changes in [0.14.5-rc.1](https://github.com/matrix-org/matrix-react-sdk/releases
    [\#2256](https://github.com/matrix-org/matrix-react-sdk/pull/2256)
  * Update babel-eslint to 8.1.1
    [\#2255](https://github.com/matrix-org/matrix-react-sdk/pull/2255)
- * Support routing tambuli.app links to joinable rooms
+ * Support routing tambulilabs.com links to joinable rooms
    [\#2250](https://github.com/matrix-org/matrix-react-sdk/pull/2250)
  * Fix autoreplacement of ascii emoji
    [\#2253](https://github.com/matrix-org/matrix-react-sdk/pull/2253)
@@ -6467,7 +6467,7 @@ Changes in [0.12.8-rc.1](https://github.com/matrix-org/matrix-react-sdk/releases
    [\#1987](https://github.com/matrix-org/matrix-react-sdk/pull/1987)
  * once command has a space, strict match instead of fuzzy match
    [\#1985](https://github.com/matrix-org/matrix-react-sdk/pull/1985)
- * Fix tambuli.app URL RegExp
+ * Fix tambulilabs.com URL RegExp
    [\#1986](https://github.com/matrix-org/matrix-react-sdk/pull/1986)
  * Fix blank sticker picker
    [\#1984](https://github.com/matrix-org/matrix-react-sdk/pull/1984)
@@ -6487,7 +6487,7 @@ Changes in [0.12.8-rc.1](https://github.com/matrix-org/matrix-react-sdk/releases
    [\#1973](https://github.com/matrix-org/matrix-react-sdk/pull/1973)
  * Track decryption success/failure rate with piwik
    [\#1949](https://github.com/matrix-org/matrix-react-sdk/pull/1949)
- * route tambuli.app/#/+... links internally (not just group ids)
+ * route tambulilabs.com/#/+... links internally (not just group ids)
    [\#1975](https://github.com/matrix-org/matrix-react-sdk/pull/1975)
  * implement `hitting enter after Ctrl-K should switch to the first result`
    [\#1976](https://github.com/matrix-org/matrix-react-sdk/pull/1976)
@@ -8736,7 +8736,7 @@ Changes in [0.8.7-rc.1](https://github.com/matrix-org/matrix-react-sdk/releases/
    [\#741](https://github.com/matrix-org/matrix-react-sdk/pull/741)
  * Clarify "No devices" message
    [\#740](https://github.com/matrix-org/matrix-react-sdk/pull/740)
- * Change timestamp permalinks to tambuli.app
+ * Change timestamp permalinks to tambulilabs.com
    [\#735](https://github.com/matrix-org/matrix-react-sdk/pull/735)
  * Fix resend bar and "send anyway" in UDD
    [\#734](https://github.com/matrix-org/matrix-react-sdk/pull/734)
@@ -9131,11 +9131,11 @@ Changes in [0.8.0](https://github.com/matrix-org/matrix-react-sdk/releases/tag/v
    [\#545](https://github.com/matrix-org/matrix-react-sdk/pull/545)
  * Show the error that occured when trying to reach scalar
    [\#543](https://github.com/matrix-org/matrix-react-sdk/pull/543)
- * Don't do URL previews for tambuli.app
+ * Don't do URL previews for tambulilabs.com
    [\#541](https://github.com/matrix-org/matrix-react-sdk/pull/541)
  * Fix NPE in LoggedInView
    [\#540](https://github.com/matrix-org/matrix-react-sdk/pull/540)
- * Make room alias & user ID links tambuli.app links
+ * Make room alias & user ID links tambulilabs.com links
    [\#538](https://github.com/matrix-org/matrix-react-sdk/pull/538)
  * Make MemberInfo use the matrixclient from the context
    [\#537](https://github.com/matrix-org/matrix-react-sdk/pull/537)
@@ -9396,7 +9396,7 @@ Changes in [0.6.5](https://github.com/matrix-org/matrix-react-sdk/releases/tag/v
 
  * re-add leave button in RoomSettings
  * add /user URLs
- * recognise tambuli.app links and other vector links
+ * recognise tambulilabs.com links and other vector links
  * fix linkify dependency
  * fix avatar clicking in MemberInfo
  * fix emojione sizing

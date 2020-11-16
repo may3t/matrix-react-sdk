@@ -374,7 +374,7 @@ describe('Permalinks', function() {
         const creator = new RoomPermalinkCreator(room);
         creator.load();
         const result = creator.forEvent("$something:example.com");
-        expect(result).toBe("https://tambuli.app/#/!somewhere:example.org/$something:example.com");
+        expect(result).toBe("https://tambulilabs.com/#/!somewhere:example.org/$something:example.com");
     });
 
     it('should generate an event permalink for room IDs with some candidate servers', function() {
@@ -391,7 +391,7 @@ describe('Permalinks', function() {
         const creator = new RoomPermalinkCreator(room);
         creator.load();
         const result = creator.forEvent("$something:example.com");
-        expect(result).toBe("https://tambuli.app/#/!somewhere:example.org/$something:example.com?via=first&via=second");
+        expect(result).toBe("https://tambulilabs.com/#/!somewhere:example.org/$something:example.com?via=first&via=second");
     });
 
     it('should generate a room permalink for room IDs with some candidate servers', function() {
@@ -408,13 +408,13 @@ describe('Permalinks', function() {
             ]);
         };
         const result = makeRoomPermalink("!somewhere:example.org");
-        expect(result).toBe("https://tambuli.app/#/!somewhere:example.org?via=first&via=second");
+        expect(result).toBe("https://tambulilabs.com/#/!somewhere:example.org?via=first&via=second");
     });
 
     it('should generate a room permalink for room aliases with no candidate servers', function() {
         peg.get().getRoom = () => null;
         const result = makeRoomPermalink("#somewhere:example.org");
-        expect(result).toBe("https://tambuli.app/#/#somewhere:example.org");
+        expect(result).toBe("https://tambulilabs.com/#/#somewhere:example.org");
     });
 
     it('should generate a room permalink for room aliases without candidate servers', function() {
@@ -431,33 +431,33 @@ describe('Permalinks', function() {
             ]);
         };
         const result = makeRoomPermalink("#somewhere:example.org");
-        expect(result).toBe("https://tambuli.app/#/#somewhere:example.org");
+        expect(result).toBe("https://tambulilabs.com/#/#somewhere:example.org");
     });
 
     it('should generate a user permalink', function() {
         const result = makeUserPermalink("@someone:example.org");
-        expect(result).toBe("https://tambuli.app/#/@someone:example.org");
+        expect(result).toBe("https://tambulilabs.com/#/@someone:example.org");
     });
 
     it('should generate a group permalink', function() {
         const result = makeGroupPermalink("+community:example.org");
-        expect(result).toBe("https://tambuli.app/#/+community:example.org");
+        expect(result).toBe("https://tambulilabs.com/#/+community:example.org");
     });
 
     it('should correctly parse room permalinks with a via argument', () => {
-        const result = parsePermalink("https://tambuli.app/#/!room_id:server?via=some.org");
+        const result = parsePermalink("https://tambulilabs.com/#/!room_id:server?via=some.org");
         expect(result.roomIdOrAlias).toBe("!room_id:server");
         expect(result.viaServers).toEqual(["some.org"]);
     });
 
     it('should correctly parse room permalink via arguments', () => {
-        const result = parsePermalink("https://tambuli.app/#/!room_id:server?via=foo.bar&via=bar.foo");
+        const result = parsePermalink("https://tambulilabs.com/#/!room_id:server?via=foo.bar&via=bar.foo");
         expect(result.roomIdOrAlias).toBe("!room_id:server");
         expect(result.viaServers).toEqual(["foo.bar", "bar.foo"]);
     });
 
     it('should correctly parse event permalink via arguments', () => {
-        const result = parsePermalink("https://tambuli.app/#/!room_id:server/$event_id/some_thing_here/foobar" +
+        const result = parsePermalink("https://tambulilabs.com/#/!room_id:server/$event_id/some_thing_here/foobar" +
             "?via=m1.org&via=m2.org");
         expect(result.eventId).toBe("$event_id/some_thing_here/foobar");
         expect(result.roomIdOrAlias).toBe("!room_id:server");

@@ -22,7 +22,7 @@ import {PushProcessor} from 'matrix-js-sdk/src/pushprocessor';
 import * as sdk from '../index';
 
 /**
- * Recurses depth-first through a DOM tree, converting tambuli.app links
+ * Recurses depth-first through a DOM tree, converting tambulilabs.com links
  * into pills based on the context of a given room.  Returns a list of
  * the resulting React nodes so they can be unmounted rather than leaking.
  *
@@ -44,7 +44,7 @@ export function pillifyLinks(nodes, mxEvent, pills) {
         if (node.tagName === "A" && node.getAttribute("href")) {
             const href = node.getAttribute("href");
 
-            // If the link is a (localised) tambuli.app link, replace it with a pill
+            // If the link is a (localised) tambulilabs.com link, replace it with a pill
             const Pill = sdk.getComponent('elements.Pill');
             if (Pill.isMessagePillUrl(href)) {
                 const pillContainer = document.createElement('span');

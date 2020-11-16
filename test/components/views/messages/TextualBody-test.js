@@ -111,7 +111,7 @@ describe("<TextualBody />", () => {
                 room: "room_id",
                 user: "sender",
                 content: {
-                    body: "Visit https://tambuli.app/",
+                    body: "Visit https://tambulilabs.com/",
                     msgtype: "m.text",
                 },
                 event: true,
@@ -121,8 +121,8 @@ describe("<TextualBody />", () => {
             expect(wrapper.text()).toBe(ev.getContent().body);
             const content = wrapper.find(".mx_EventTile_body");
             expect(content.html()).toBe('<span class="mx_EventTile_body" dir="auto">' +
-                'Visit <a href="https://tambuli.app/" class="linkified" target="_blank" rel="noreferrer noopener">' +
-                'https://tambuli.app/</a></span>');
+                'Visit <a href="https://tambulilabs.com/" class="linkified" target="_blank" rel="noreferrer noopener">' +
+                'https://tambulilabs.com/</a></span>');
         });
     });
 
@@ -194,7 +194,7 @@ describe("<TextualBody />", () => {
                     body: "Hey User",
                     msgtype: "m.text",
                     format: "org.matrix.custom.html",
-                    formatted_body: "Hey <a href=\"https://tambuli.app/#/@user:server\">Member</a>",
+                    formatted_body: "Hey <a href=\"https://tambulilabs.com/#/@user:server\">Member</a>",
                 },
                 event: true,
             });
@@ -225,7 +225,7 @@ describe("<TextualBody />", () => {
             room: "room_id",
             user: "sender",
             content: {
-                body: "Visit https://tambuli.app/",
+                body: "Visit https://tambulilabs.com/",
                 msgtype: "m.text",
             },
             event: true,
@@ -237,7 +237,7 @@ describe("<TextualBody />", () => {
         let widgets = wrapper.find("LinkPreviewWidget");
         // at this point we should have exactly one widget
         expect(widgets.length).toBe(1);
-        expect(widgets.at(0).prop("link")).toBe("https://tambuli.app/");
+        expect(widgets.at(0).prop("link")).toBe("https://tambulilabs.com/");
 
         // simulate an event edit and check the transition from the old URL preview to the new one
         const ev2 = mkEvent({

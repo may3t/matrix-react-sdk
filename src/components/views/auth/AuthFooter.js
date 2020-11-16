@@ -26,7 +26,7 @@ export default createReactClass({
     render: function() {
         return (
             <div className="mx_AuthFooter">
-                <a href="https://tambuli.app" target="_blank" rel="noreferrer noopener">{ _t("powered by Matrix") }</a>
+                <a href="https://tambulilabs.com" target="_blank" rel="noreferrer noopener">{ _t("powered by Matrix") }</a>
             </div>
         );
     },

@@ -16,11 +16,11 @@ limitations under the License.
 
 import PermalinkConstructor, {PermalinkParts} from "./PermalinkConstructor";
 
-export const host = "tambuli.app";
+export const host = "tambulilabs.com";
 export const baseUrl = `https://${host}`;
 
 /**
- * Generates tambuli.app permalinks
+ * Generates tambulilabs.com permalinks
  */
 export default class SpecPermalinkConstructor extends PermalinkConstructor {
     constructor() {

@@ -257,7 +257,7 @@ export default createReactClass({
                 busyLoggingIn: false,
                 errorText: errorText,
                 // 401 would be the sensible status code for 'incorrect password'
-                // but the login API gives a 403 https://tambuli.app/jira/browse/SYN-744
+                // but the login API gives a 403 https://tambulilabs.com/jira/browse/SYN-744
                 // mentions this (although the bug is for UI auth which is not this)
                 // We treat both as an incorrect password
                 loginIncorrect: error.httpStatus === 401 || error.httpStatus === 403,

@@ -157,7 +157,8 @@ export default class EventIndexPanel extends React.Component {
                     </div>
                 </div>
             );
-        } else if (EventIndexPeg.platformHasSupport() && !EventIndexPeg.supportIsInstalled()) {
+        } 
+        /*else if (EventIndexPeg.platformHasSupport() && !EventIndexPeg.supportIsInstalled()) {
             const nativeLink = (
                 "https://github.com/vector-im/riot-web/blob/develop/" +
                 "docs/native-node-modules.md#" +
@@ -182,7 +183,8 @@ export default class EventIndexPanel extends React.Component {
                     }
                 </div>
             );
-        } else {
+        } */
+        else {
             eventIndexingSettings = (
                 <div className='mx_SettingsTab_subsectionText'>
                     {
@@ -193,7 +195,7 @@ export default class EventIndexPanel extends React.Component {
                                 brand,
                             },
                             {
-                                'desktopLink': (sub) => <a href="https://tambuli.app/desktop"
+                                'desktopLink': (sub) => <a href="https://tambulilabs.com/desktop"
                                     target="_blank" rel="noreferrer noopener">{sub}</a>,
                             },
                         )

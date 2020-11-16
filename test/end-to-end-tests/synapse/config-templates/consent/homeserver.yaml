@@ -680,7 +680,7 @@ registration_shared_secret: "{{REGISTRATION_SHARED_SECRET}}"
 # (By default, no suggestion is made, so it is left up to the client.
 # This setting is ignored unless public_baseurl is also set.)
 #
-#default_identity_server: https://tambuli.app
+#default_identity_server: https://tambulilabs.com
 
 # The list of identity servers trusted to verify third party
 # identifiers by this server.

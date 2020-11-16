@@ -243,7 +243,7 @@ export default createReactClass({
 
             // never preview permalinks (if anything we should give a smart
             // preview of the room/user they point to: nobody needs to be reminded
-            // what the tambuli.app site looks like).
+            // what the tambulilabs.com site looks like).
             if (isPermalinkHost(host)) return false;
 
             if (node.textContent.toLowerCase().trim().startsWith(host.toLowerCase())) {

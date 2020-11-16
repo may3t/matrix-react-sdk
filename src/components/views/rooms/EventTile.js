@@ -519,7 +519,7 @@ export default createReactClass({
 
     onPermalinkClicked: function(e) {
         // This allows the permalink to be opened in a new tab/window or copied as
-        // tambuli.app, but also for it to enable routing within Riot when clicked.
+        // tambulilabs.com, but also for it to enable routing within Riot when clicked.
         e.preventDefault();
         dis.dispatch({
             action: 'view_room',

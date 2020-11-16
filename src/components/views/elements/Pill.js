@@ -28,7 +28,7 @@ import {getPrimaryPermalinkEntity} from "../../../utils/permalinks/Permalinks";
 import MatrixClientContext from "../../../contexts/MatrixClientContext";
 import {Action} from "../../../dispatcher/actions";
 
-// For URLs of tambuli.app links in the timeline which have been reformatted by
+// For URLs of tambulilabs.com links in the timeline which have been reformatted by
 // HttpUtils transformTags to relative links. This excludes event URLs (with `[^\/]*`)
 const REGEX_LOCAL_PERMALINK = /^#\/(?:user|room|group)\/(([#!@+])[^/]*)$/;
 

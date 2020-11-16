@@ -182,7 +182,7 @@ function setRoomNotifsStateUnmuted(roomId, newState) {
                 'dont_notify',
             ],
         }));
-        // https://tambuli.app/jira/browse/SPEC-400
+        // https://tambulilabs.com/jira/browse/SPEC-400
         promises.push(cli.setPushRuleEnabled('global', 'room', roomId, true));
     } else if ('all_messages_loud') {
         promises.push(cli.addPushRule('global', 'room', roomId, {
@@ -194,7 +194,7 @@ function setRoomNotifsStateUnmuted(roomId, newState) {
                 },
             ],
         }));
-        // https://tambuli.app/jira/browse/SPEC-400
+        // https://tambulilabs.com/jira/browse/SPEC-400
         promises.push(cli.setPushRuleEnabled('global', 'room', roomId, true));
     }
 

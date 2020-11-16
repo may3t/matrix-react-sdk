@@ -465,10 +465,10 @@ export const Commands = [
                 //   /join #example:example.org
                 //   /join !example:example.org
                 //   /join !example:example.org altserver.com elsewhere.ca
-                //   /join https://tambuli.app/#/!example:example.org?via=altserver.com
+                //   /join https://tambulilabs.com/#/!example:example.org?via=altserver.com
                 // The command also supports event permalinks transparently:
-                //   /join https://tambuli.app/#/!example:example.org/$something:example.org
-                //   /join https://tambuli.app/#/!example:example.org/$something:example.org?via=altserver.com
+                //   /join https://tambulilabs.com/#/!example:example.org/$something:example.org
+                //   /join https://tambulilabs.com/#/!example:example.org/$something:example.org?via=altserver.com
                 const params = args.split(' ');
                 if (params.length < 1) return reject(this.getUsage());
 

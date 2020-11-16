@@ -95,7 +95,7 @@ const customVariables = {
     'Homeserver URL': {
         id: 7,
         expl: _td('Your homeserver\'s URL'),
-        example: 'https://tambuli.app',
+        example: 'https://tambulilabs.com',
     },
     'Touch Input': {
         id: 8,

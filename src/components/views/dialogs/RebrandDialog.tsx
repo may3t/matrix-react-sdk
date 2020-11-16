@@ -64,7 +64,7 @@ export default class RebrandDialog extends React.PureComponent<IProps> {
                 "You’re already signed in and good to go here, but you can also grab the latest " +
                 "versions of the app on all platforms at <a>element.io/get-started</a>.", {},
                 {
-                    a: sub => <a href="https://tambuli.app/" rel="noopener noreferrer" target="_blank">{sub}</a>,
+                    a: sub => <a href="https://tambulilabs.com/" rel="noopener noreferrer" target="_blank">{sub}</a>,
                 },
             );
         }
@@ -106,7 +106,7 @@ export default class RebrandDialog extends React.PureComponent<IProps> {
             <div>
                 {_t(
                     "Learn more at <a>element.io/previously-riot</a>", {}, {
-                        a: sub => <a href="https://tambuli.app" rel="noopener noreferrer" target="_blank">{sub}</a>,
+                        a: sub => <a href="https://tambulilabs.com" rel="noopener noreferrer" target="_blank">{sub}</a>,
                     }
                 )}
             </div>
