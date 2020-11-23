@@ -47,7 +47,7 @@ export const showToast = (version: string, newVersion: string, releaseNotes?: st
 
     let onAccept;
     let acceptLabel = _t("What's new?");
-    if (releaseNotes) {
+    /*if (releaseNotes) {
         onAccept = () => {
             Modal.createTrackedDialog('Display release notes', '', QuestionDialog, {
                 title: _t("What's New"),
@@ -60,7 +60,9 @@ export const showToast = (version: string, newVersion: string, releaseNotes?: st
                 },
             });
         };
-    } else if (checkVersion(version) && checkVersion(newVersion)) {
+    }*/
+
+    /*else if (checkVersion(version) && checkVersion(newVersion)) {
         onAccept = () => {
             Modal.createTrackedDialog('Display Changelog', '', ChangelogDialog, {
                 version,
@@ -72,12 +74,14 @@ export const showToast = (version: string, newVersion: string, releaseNotes?: st
                 },
             });
         };
-    } else {
+        
+    }
+    else {
         onAccept = installUpdate;
         acceptLabel = _t("Restart");
-    }
+    } */
 
-    const brand = SdkConfig.get().brand;
+    /*const brand = SdkConfig.get().brand;
     ToastStore.sharedInstance().addOrReplaceToast({
         key: TOAST_KEY,
         title: _t("Upgrade your %(brand)s", { brand }),
@@ -90,7 +94,7 @@ export const showToast = (version: string, newVersion: string, releaseNotes?: st
         },
         component: GenericToast,
         priority: 20,
-    });
+    });*/
 };
 
 export const hideToast = () => {
