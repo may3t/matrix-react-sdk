@@ -47,7 +47,7 @@ export const showToast = (version: string, newVersion: string, releaseNotes?: st
 
     let onAccept;
     let acceptLabel = _t("What's new?");
-    if (releaseNotes) {
+    /*if (releaseNotes) {
         onAccept = () => {
             Modal.createTrackedDialog('Display release notes', '', QuestionDialog, {
                 title: _t("What's New"),
@@ -91,6 +91,7 @@ export const showToast = (version: string, newVersion: string, releaseNotes?: st
         component: GenericToast,
         priority: 20,
     });
+    */
 };
 
 export const hideToast = () => {

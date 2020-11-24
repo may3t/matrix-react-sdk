@@ -21,7 +21,7 @@ import * as sdk from '../../../index';
 import request from 'browser-request';
 import { _t } from '../../../languageHandler';
 
-const REPOS = ['vector-im/riot-web', 'matrix-org/matrix-react-sdk', 'matrix-org/matrix-js-sdk'];
+const REPOS = ['tambulihuddle'];
 
 export default class ChangelogDialog extends React.Component {
     constructor(props) {

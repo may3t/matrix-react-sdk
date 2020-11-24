@@ -589,7 +589,8 @@ export default class AppTile extends React.Component {
     _templatedUrl(u, widgetType: string) {
         const targetData = {};
         if (WidgetType.JITSI.matches(widgetType)) {
-            targetData['domain'] = 'jitsi.riot.im'; // v1 jitsi widgets have this hardcoded
+            //targetData['domain'] = 'jitsi.riot.im'; // v1 jitsi widgets have this hardcoded
+            targetData['domain'] = 'meet.tambulihuddle.com'; // v1 jitsi widgets have this hardcoded
         }
         const myUserId = MatrixClientPeg.get().credentials.userId;
         const myUser = MatrixClientPeg.get().getUser(myUserId);
